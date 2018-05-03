@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cinemas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="background">
+    <h2 class="titulo">Escolha o shopping</h2>
+  </div>
+  <p>
+    <ion-list>
+      <!-- Shopping Cidade Sorocaba-->
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../assets/image/shopping_cidade.jpg">
+        </ion-thumbnail>
+        <h3>
+          <strong>Cidade Sorocaba</strong>
+        </h3>
+        <p>Cine Araújo</p>        
+        <button ion-button clear item-end (click)="OpenFilmesCidade()">Entrar</button>
+      </ion-item>
+      <!-- Shopping Cianê-->
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../assets/image/shopping_ciane.png">
+        </ion-thumbnail>
+        <h3>
+          <strong>Pátio Ciane</strong>
+        </h3>
+        <p>Cine Araújo</p>
+        <button ion-button clear item-end (click)="OpenFilmesCiane()">Entrar</button>
+      </ion-item>
+      <!-- Sorocaba Shopping-->
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../assets/image/shopping_sorocaba.png">
+        </ion-thumbnail>
+        <h3>
+          <strong>Sorocaba Shopping</strong>
+        </h3>
+        <p>CinePlay</p>
+        <button ion-button clear item-end>Entrar</button>
+      </ion-item>
+      <!-- Shopping Iguatemi-->
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../assets/image/shopping_iguatemi.png">
+        </ion-thumbnail>
+        <h3>
+          <strong>Iguatemi Sorocaba</strong>
+        </h3>
+        <p>Cinépolis</p>
+        <button ion-button clear item-end>Entrar</button>
+      </ion-item>
+      <!-- Shopping Panorâmico-->
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../assets/image/shopping_panoramico.jpg">
+        </ion-thumbnail>
+        <h3>
+          <strong>Shopping Panorâmico</strong>
+        </h3>
+        <p>CinePlay</p>
+        <button ion-button clear item-end>Entrar</button>
+      </ion-item>
+    </ion-list>
+  </p>
+</ion-content>
