@@ -17,6 +17,7 @@ import { MenuPage } from '../pages/menu/menu';
 import { MenuPageModule } from '../pages/menu/menu.module';
 import { FilmesProvider } from '../providers/filmes/filmes';
 import { FilmesCinePageModule } from '../pages/filmes-cine/filmes-cine.module';
+import { FilmesDetalhePageModule } from '../pages/filmes-detalhe/filmes-detalhe.module';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { FilmesCinePageModule } from '../pages/filmes-cine/filmes-cine.module';
     HttpModule,
     HttpClientModule,
     MenuPageModule,
-    FilmesCinePageModule
+    FilmesCinePageModule,
+    FilmesDetalhePageModule
     
   ],
   bootstrap: [IonicApp],

@@ -17,6 +17,6 @@
     <img class="card-bgPage" src="https://raw.githubusercontent.com/DCGudo/appCine/master{{cinema.cartaz}}" />              
     <br>
     <h3 class="titulo"><strong>{{cinema.titulo}}</strong></h3>
-    <iframe width="100%" height="56%" src="https://www.youtube.com/embed/4jGRyEa2jhE" frameborder="0" allowfullscreen ng-show="showvideo"></iframe>
+    <button ion-button block (click)="OpenFilmDetail(cinema)">Detalhes</button>    
   </ion-card>
 </ion-content>

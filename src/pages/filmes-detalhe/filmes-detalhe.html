@@ -1,0 +1,45 @@
+<!--
+  Generated template for the FilmesDetalhePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalhe do filme</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list *ngIf="filmeDetalhe">
+    <ion-item>
+      <br>
+      <ion-thumbnail item-start>
+        <img class="tamanho" src="https://raw.githubusercontent.com/DCGudo/appCine/master{{filmeDetalhe.cartaz}}">
+      </ion-thumbnail>
+      <div class="alinhamento">
+        <h6>
+          <strong>{{filmeDetalhe.titulo}}</strong>
+        </h6>
+        <br>
+        <p>Gênero: {{filmeDetalhe.genero}}</p>
+        <p>Classificação: {{filmeDetalhe.censura}}</p>
+        <p>Duração: {{filmeDetalhe.duracao}}</p>
+        <li class="format" *ngFor="let sala of filmeDetalhe.salas">
+          {{sala.sala}} {{sala.lingua}} {{sala.visual}}
+        </li>
+        <h2 item-end></h2>
+      </div>
+    </ion-item>
+    <p padding>
+      <strong>Sinopse:</strong>
+      <br> {{filmeDetalhe.sinopse}}</p>
+      <iframe width="100%" height="70%" [src]="updateVideoUrl(filmeDetalhe.trailer)" frameborder="0" ng-show="showvideo"></iframe>
+      <!-- com opção de fullscreen, mas está parando o video ao entrar em full screen
+        <iframe width="100%" height="70%" [src]="updateVideoUrl(filmeDetalhe.trailer)" frameborder="0" allowfullscreen ng-show="showvideo"></iframe>
+      -->
+  </ion-list>  
+</ion-content>

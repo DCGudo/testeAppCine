@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FilmesProvider } from '../../providers/filmes/filmes';
+import { FilmesDetalhePage } from '../filmes-detalhe/filmes-detalhe';
 
 /**
  * Generated class for the FilmesCinePage page.
@@ -40,5 +41,10 @@ export class FilmesCinePage {
         console.log(error);
       })
     }
+
+  public OpenFilmDetail(filme){
+    console.log(filme);
+    this.navCtrl.push(FilmesDetalhePage, {filmeDetalhe : filme});
+  }
    
 }

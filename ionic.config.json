@@ -1,15 +1,14 @@
 {
   "name": "myApp",
-  "app_id": "",
+  "app_id": "cfb416cc",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
   },
   "proxies": [
     {
-      "path": "/filmesapi",     
+      "path": "/filmesapi",
       "proxyUrl": "https://raw.githubusercontent.com/DCGudo/appCine/master"
-     
     }
   ]
 }
